@@ -22,6 +22,7 @@ def createTables(conn):
         create_terms_table = "CREATE TABLE IF NOT EXISTS terms (term text NOT NULL, num_chars integer NOT NULL, CONSTRAINT terms_pkey PRIMARY KEY (term));"
         create_indexes_table = "CREATE TABLE IF NOT EXISTS indexes (term text NOT NULL, doc integer NOT NULL, count integer NOT NULL, PRIMARY KEY(term, doc), CONSTRAINT term_fkey FOREIGN KEY (term) REFERENCES terms(term), CONSTRAINT doc_fkey FOREIGN KEY (doc) REFERENCES documents(doc)  );"
         curr.execute(create_categ_table + create_docs_table + create_terms_table + create_indexes_table)
+        conn.commit()
     except():
         print("There was a failure to create the tables")
 def connectDataBase():
@@ -31,7 +32,7 @@ def connectDataBase():
     DB_NAME = "corpus"
     DB_USER = "postgres"
     DB_PASS = "123"
-    DB_HOST = "127.0.0.1"
+    DB_HOST = "localhost"
     DB_PORT = "5432"
     try:
         conn = connect(
