@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------
-# AUTHOR: your name
-# FILENAME: title of the source file
-# SPECIFICATION: description of the program
+# AUTHOR: Darren Banhthai
+# FILENAME: db_connection_mongo_solution.py
+# SPECIFICATION: Provides inverted index creation with mongo
 # FOR: CS 4250- Assignment #2
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: 5
 #-----------------------------------------------------------*/
 
 #IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to work here only with

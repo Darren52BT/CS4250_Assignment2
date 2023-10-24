@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------
 # AUTHOR: Darren Banhthai
-# FILENAME: title of the source file
-# SPECIFICATION: description of the program
-# FOR: CS 4250- Assignment #1
-# TIME SPENT: how long it took you to complete the assignment
+# FILENAME: db_connection_solution.py
+# SPECIFICATION: Provides inverted index creation with postgres
+# FOR: CS 4250- Assignment #2
+# TIME SPENT: 6
 #-----------------------------------------------------------*/
 
 #IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to work here only with
